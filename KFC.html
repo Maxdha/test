@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Totally Not Hacked</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #00ff99;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
+        url("https://media.tenor.com/FBOoUEh2BBoAAAAe/spongebob-cool-spongebob.png");
+      background-size: cover;
+      background-position: center;
+      animation: bgZoom 6s infinite alternate ease-in-out;
+    }
+
+    @keyframes bgZoom {
+      from { background-size: 100%; }
+      to { background-size: 115%; }
+    }
+
+    .glitch {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+      text-shadow:
+        3px 3px #ff00ff,
+        -3px -3px #00ffff,
+        0 0 20px lime;
+      animation: shake 0.15s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(1px, 1px); }
+      25% { transform: translate(-2px, 2px); }
+      50% { transform: translate(2px, -1px); }
+      75% { transform: translate(-1px, -2px); }
+      100% { transform: translate(1px, 1px); }
+    }
+
+    .subtitle {
+      position: absolute;
+      top: 48%;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      text-shadow: 0 0 10px black;
+    }
+
+    .matrix {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      font-size: 20px;
+      white-space: pre;
+      animation: fall 8s linear infinite;
+    }
+
+    @keyframes fall {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(100%); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="matrix">
+    010101 LOL HAXX 420 SPONGE 1337 KRABBY PATTY SYSTEM OVERRIDE
+    010101 LOL HAXX 420 SPONGE 1337 KRABBY PATTY SYSTEM OVERRIDE
+    010101 LOL HAXX 420 SPONGE 1337 KRABBY PATTY SYSTEM OVERRIDE
+  </div>
+
+  <div class="glitch">u got haxx0red 😎</div>
+  <div class="subtitle">ur files are now replaced with goofy bubbles 🫧</div>
+
+  <script>
+    window.onload = function () {
+      alert("⚠️ HAXX0R ALERT ⚠️\n\nu have been hacked by the elite SpongeBob cyber squad 😎\n\npassword found: ilovekrabbypatties123");
+    };
+  </script>
+</body>
+</html>
