@@ -1,1 +1,1 @@
-<script>alert(localStorage.getItem(‘key’))</script>
+<script>alert(localStorage.getItem(‘ACCESS_TOKEN’))</script>
